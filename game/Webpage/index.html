@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>AI Game</title>
+		<link rel="stylesheet" href="style.css" />
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div id="header" class="panel">
+			<div class="background"></div>
+			<div class="icon-holder">
+				<button class="icon-button">
+					<img src="Vector/Potion.svg" />
+				</button>
+				<button class="icon-button" id="inventory-button">
+					<img src="Vector/Backpack.svg" />
+				</button>
+				<button class="icon-button">
+					<img src="Vector/Character.svg" />
+				</button>
+			</div>
+		</div>
+		<div id="adventure-text-container">
+			<div id="adventure-text"></div>
+		</div>
+		<div id="inventory-popup" class="panel">
+			<div class="background"></div>
+			<div class="item-container"></div>
+		</div>
+		<div id="footer" class="panel">
+			<div class="background"></div>
+			<input
+				type="text"
+				placeholder="Action Input!"
+				class="text-box"
+				id="action-input"
+			/>
+			<button class="icon-button" id="run-action-button">
+				<img src="Vector/Send.svg" />
+			</button>
+		</div>
+
+		<script src="server.js" type="module"></script>
+		<script src="inventory.js" type="module"></script>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+{
+	"name": "ai-dungeon-dev-course",
+	"version": "1.0.0",
+	"main": "main.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "browserify main.js -o bundle.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"express": "^4.21.2",
+		"request": "^2.88.2",
+		"request-promise": "^4.2.6"
+	},
+	"devDependencies": {
+		"http-proxy-middleware": "^3.0.3"
+	}
+}
